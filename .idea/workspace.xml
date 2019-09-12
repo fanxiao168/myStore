@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ee507a9-bb56-4613-8bfa-0f3187a21f32" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/myStore/app/components/Adverticement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myStore/app/components/Products.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myStore/app/components/Searchbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myStore/app/image/double-11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myStore/app/image/eyes.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myStore/app/image/five-year.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myStore/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/myStore/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myStore/app/components/Adverticement.js" beforeDir="false" afterPath="$PROJECT_DIR$/myStore/app/components/Adverticement.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -56,10 +49,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myStore/app/components/Adverticement.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myStore/app/components/Products.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="65" column="48" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
+            <state relative-caret-position="205">
+              <caret line="82" column="13" lean-forward="true" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -77,14 +82,14 @@
       <list>
         <option value="$PROJECT_DIR$/myStore/App.js" />
         <option value="$PROJECT_DIR$/myStore/app/components/Searchbar.js" />
-        <option value="$PROJECT_DIR$/myStore/app/components/Adverticement.js" />
         <option value="$PROJECT_DIR$/myStore/app/components/Products.js" />
+        <option value="$PROJECT_DIR$/myStore/app/components/Adverticement.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="233" />
-    <option name="y" value="69" />
+    <option name="x" value="416" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="731" />
   </component>
@@ -179,15 +184,15 @@
       <workItem from="1568172013377" duration="428000" />
       <workItem from="1568186327256" duration="374000" />
       <workItem from="1568186747653" duration="7035000" />
-      <workItem from="1568253343448" duration="6610000" />
+      <workItem from="1568253343448" duration="8273000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15816000" />
+    <option name="totallyTimeSpent" value="17479000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="159" y="250" width="1280" height="731" extended-state="0" />
+    <frame x="416" y="23" width="1280" height="731" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2605242" />
@@ -244,16 +249,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myStore/app/components/Adverticement.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myStore/app/components/Searchbar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
@@ -266,10 +261,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myStore/app/components/Products.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="65" column="48" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
+        <state relative-caret-position="205">
+          <caret line="82" column="13" lean-forward="true" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myStore/app/components/Adverticement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

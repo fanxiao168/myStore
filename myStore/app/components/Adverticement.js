@@ -8,6 +8,10 @@ import {
   Dimensions,
 } from 'react-native';
 
+const width = Dimensions.get("window").width;
+const circleSize = 8;
+const circleMargin = 5;
+
 export default class Adverticement extends Component {
   constructor(props) {
     super(props);
@@ -54,14 +58,31 @@ export default class Adverticement extends Component {
     clearInterval(this.timerId);
   };
 
+  _scrollBeginDrag = () => {
+    this._endTimer();
+  }
+
+  _scrollEndDrag = () => {
+    this._startTimer();
+  }
+
   render() {
+
+    //计算轮播指示器的位置
+    const advertisementCount = this.state.advertisements.length;
+    const indicatorWidth = circleSize * advertisementCount + circleMargin * advertisementCount * 2;
+    const indicatorOffsetX = (width - indicatorWidth) / 2;
+
     return (
       <View style={styles.advertisement}>
         <ScrollView
+            ref="scrollView"
+            onScrollBeginDrag={this._scrollBeginDrag}
+            onScrollEndDrag={this._scrollEndDrag}
           horizontal={true}
           showsHorizontalScrollIndicator={false}
           pagingEnabled={true}
-          ref="scrollView">
+          >
           {this.state.advertisements.map((item, index) => {
             return (
               <View key={index} style={styles.item}>
@@ -70,6 +91,19 @@ export default class Adverticement extends Component {
             );
           })}
         </ScrollView>
+
+        <View style={[styles.indicator,{left:indicatorOffsetX}]}>
+          {
+            this.state.advertisements.map((item,i) => {
+              const dynamicStyle =
+                  i === this.state.currentPage
+                      ? styles.circleSelected : {};
+              return ( <View key={i} style={[styles.circle,dynamicStyle]}></View> )
+
+            })
+          }
+        </View>
+
       </View>
     );
   }
@@ -83,4 +117,20 @@ const styles = StyleSheet.create({
     width: Dimensions.get('window').width,
     height: 200,
   },
+  indicator:{
+    position:"absolute",
+    bottom:circleSize + circleMargin,
+    flexDirection:"row"
+  },
+  circle:{
+    width:circleSize,
+    height:circleSize,
+    borderRadius:circleSize / 2,
+    backgroundColor:"#ccc",
+    marginHorizontal:circleMargin
+  },
+  circleSelected:{
+    backgroundColor: "#fff"
+  }
+
 });
