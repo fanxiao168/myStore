@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ee507a9-bb56-4613-8bfa-0f3187a21f32" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/myStore/app/components/Adverticement.js" beforeDir="false" afterPath="$PROJECT_DIR$/myStore/app/components/Adverticement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myStore/app/components/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/myStore/app/components/Products.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myStore/app/components/Adverticement.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+            <state relative-caret-position="279">
+              <caret line="24" column="41" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="41" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -60,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myStore/app/components/Products.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="82" column="13" lean-forward="true" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
+            <state relative-caret-position="359">
+              <caret line="147" column="32" selection-start-line="147" selection-start-column="32" selection-end-line="147" selection-end-column="32" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -82,14 +82,14 @@
       <list>
         <option value="$PROJECT_DIR$/myStore/App.js" />
         <option value="$PROJECT_DIR$/myStore/app/components/Searchbar.js" />
-        <option value="$PROJECT_DIR$/myStore/app/components/Products.js" />
         <option value="$PROJECT_DIR$/myStore/app/components/Adverticement.js" />
+        <option value="$PROJECT_DIR$/myStore/app/components/Products.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="416" />
-    <option name="y" value="23" />
+    <option name="x" value="38" />
+    <option name="y" value="113" />
     <option name="width" value="1280" />
     <option name="height" value="731" />
   </component>
@@ -184,15 +184,15 @@
       <workItem from="1568172013377" duration="428000" />
       <workItem from="1568186327256" duration="374000" />
       <workItem from="1568186747653" duration="7035000" />
-      <workItem from="1568253343448" duration="8273000" />
+      <workItem from="1568253343448" duration="10474000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17479000" />
+    <option name="totallyTimeSpent" value="19680000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="416" y="23" width="1280" height="731" extended-state="0" />
+    <frame x="38" y="113" width="1280" height="731" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2605242" />
@@ -259,22 +259,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myStore/app/components/Products.js">
+    <entry file="file://$PROJECT_DIR$/myStore/app/components/Adverticement.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="82" column="13" lean-forward="true" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
+        <state relative-caret-position="279">
+          <caret line="24" column="41" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="41" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myStore/app/components/Adverticement.js">
+    <entry file="file://$PROJECT_DIR$/myStore/app/components/Products.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+        <state relative-caret-position="359">
+          <caret line="147" column="32" selection-start-line="147" selection-start-column="32" selection-end-line="147" selection-end-column="32" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

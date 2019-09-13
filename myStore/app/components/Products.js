@@ -13,43 +13,48 @@ export default class Products extends Component {
     constructor(props){
         super(props);
         this.state = {
+            isRefreshing:false,
             products:[
-                {
-                    id: "1",
-                    title: "小米MIX3",
-                    subTitle: "滑盖手机，咔咔咔",
-                    image: ""
-                },
-                {
-                    id: "2",
-                    title: "华为Mate20",
-                    subTitle: "黑科技，牛逼牛逼",
-                    image: ""
-                },
-                {
-                    id: "3",
-                    title: "魅族",
-                    subTitle: "漂亮无需多言",
-                    image: ""
-                },
-                {
-                    id: "4",
-                    title: "锤子",
-                    subTitle: "漂亮的不像实力派",
-                    image: ""
-                },
-                {
-                    id: "5",
-                    title: "三星",
-                    subTitle: "我的电池绝对靠谱",
-                    image: ""
-                },
-                {
-                    id: "6",
-                    title: "苹果",
-                    subTitle: "我的价格是真的不贵",
-                    image: ""
-                }
+                {key: 'Devin', data: {
+                        image: require("../image/eyes.png"),
+                        title: "商品1",
+                        subTitle: "描述1"
+                    }},
+                {key: 'Jackson', data: {
+                        image: require("../image/eyes.png"),
+                        title: "商品2",
+                        subTitle: "描述2"
+                    }},
+                {key: 'James', data: {
+                        image: require("../image/eyes.png"),
+                        title: "商品3",
+                        subTitle: "描述3"
+                    }},
+                {key: 'Joel', data: {
+                        image: require("../image/eyes.png"),
+                        title: "商品4",
+                        subTitle: "描述4"
+                    }},
+                {key: 'John', data: {
+                        image: require("../image/eyes.png"),
+                        title: "商品5",
+                        subTitle: "描述5"
+                    }},
+                {key: 'Jillian', data: {
+                        image: require("../image/eyes.png"),
+                        title: "商品6",
+                        subTitle: "描述6"
+                    }},
+                {key: 'Jimmy', data: {
+                        image: require("../image/eyes.png"),
+                        title: "商品7",
+                        subTitle: "描述7"
+                    }},
+                {key: 'Julie', data: {
+                        image: require("../image/eyes.png"),
+                        title: "商品8",
+                        subTitle: "描述8"
+                    }},
             ]
         }
     }
@@ -58,27 +63,48 @@ export default class Products extends Component {
         return (
             <View style={styles.item}>
                 <Image
-                    source={item.uri}
+                    source={item.data.image}
                     style={styles.image}
                 ></Image>
                 <View style={styles.content}>
-                    <Text style={styles.title}>{item.title}</Text>
-                    <Text style={styles.subTitle}>{item.subTitle}</Text>
+                    <Text style={styles.title}>{item.data.title}</Text>
+                    <Text style={styles.subTitle}>{item.data.subTitle}</Text>
                 </View>
             </View>
         )
     }
 
-    _keyExtractor = (item,index) => {
-        return item.id;
+    _renderSeparator = ({index}) => {
+        return (
+            <View key={index} style={styles.divider}></View>
+        )
+    }
+
+    _renderRefreshContrl = () => {
+        this.setState({isRefreshing:true});
+        setTimeout(() => {
+            const newProducts = Array.from(Array(10)).map((v,i) =>({
+                key:"" + i,
+                data:{
+                    image:require("../image/eyes.png"),
+                    title:`新商品${i+1}`,
+                    subTitle:`新描述${i+1}`
+                }
+            }));
+            this.setState({isRefreshing:false,products:newProducts})
+        },2000);
     }
 
     render() {
         return (
+            // 默认情况下每一行都需要提供一个不重复的key属性，你也可以提供keyExtractor函数来生成key.
             <FlatList
                 data={this.state.products}
                 renderItem={this._renderItem}
-                keyExtractor={this._keyExtractor}
+                onRefresh={this._renderRefreshContrl}
+                refreshing={this.state.isRefreshing}
+                ItemSeparatorComponent={this._renderSeparator}
+
             ></FlatList>
             )
     }
@@ -115,5 +141,10 @@ const styles = StyleSheet.create({
         lineHeight:18,
         fontSize:12,
         color:"#ccc"
+    },
+    divider:{
+        height:1,
+        marginHorizontal: 5,
+        backgroundColor:"#f5f5f5"
     }
 });
